@@ -1,13 +1,15 @@
+# TODO create a simple log function instead of using echo syntanx everytime
+#
 # Fist install git
 echo "[@@] Installing git..."
 
-sudo yum install git
+sudo yum install -y git
 
 echo "[@@] git installed" 
 
 echo "[@@] Installing 'jq'"
 
-sudo yum install jq
+sudo yum install -y jq
 
 echo "[@@] 'jq' installed"
 
@@ -30,3 +32,23 @@ npm -v
 
 echo "[@@] 'npm' installed"
 
+echo "[@@] Installing 'pnpm'"
+
+sudo npm install -g pnpm
+
+echo "[@@] 'pnpm' installed"
+
+echo "[@@] Installing 'pm2'"
+
+sudo npm install -g pm2
+
+echo "[@@] 'pm2' installed"
+
+echo "[@@] Installing 'nginx' "
+
+sudo yum install -y nginx
+
+echo "[@@] 'nginx' installed"
+
+echo "[COMPLETED]"
+echo "---------------------------------------------------"
